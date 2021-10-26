@@ -9,7 +9,7 @@
 }
 
 * {
-	border: 1px dotted red;
+	border: 2px solid red;
 }
 
 body {
@@ -52,7 +52,7 @@ p {
 	display: grid;
 	margin: auto;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 5%;
+	grid-template-rows: 1fr 2fr 5%;
 	grid-template-areas:
       "image"
       "content"
@@ -60,6 +60,10 @@ p {
 	border-radius: 10px;
 	text-align: center;
 
+}
+
+main {
+	height: 100%;
 }
 
 #main {
