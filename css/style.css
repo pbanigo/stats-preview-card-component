@@ -1,3 +1,7 @@
+
+/* Import GoogleFonts ( Inter 400/700 - Lexand Deca 400) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
 :root {
 	--main-background: hsl(233, 47%, 7%); /**Very Dark Blue**/
 	--card-background: hsl(244, 38%, 16%); /**Dark Desaturated Blue**/
@@ -6,6 +10,10 @@
 	--main-heading: hsl(0, 0%, 100%); /**White - main heading, stats**/
 	--main-paragraph : hsla(0, 0%, 100%, 0.75); /**Slightly transparent white**/
 	--stat-headings: hsla(0, 0%, 100%, 0.6); /**Slightly transparent white**/
+
+    /* -Fonts- */
+    --inter: 'Inter', sans-serif;
+    --lexand: 'Lexend Deca', sans-serif;
 }
 
 * {
@@ -15,7 +23,7 @@
 body {
 	background-color: var(--main-background);
     font-size: 16px; 
-    font-family: 'Inter';
+    font-family: var(--inter);
 	color: var(--main-paragraph);
 
 }
@@ -50,7 +58,13 @@ p {
 }
 .container {
 	display: grid;
-	margin: auto;
+	width: 90%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto; 
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 80px;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 2fr 5%;
 	grid-template-areas:
