@@ -16,9 +16,6 @@
     --lexand: 'Lexend Deca', sans-serif;
 }
 
-* {
-	border: 2px solid red;
-}
 html {
 
     font-size: 16px; 
@@ -59,6 +56,7 @@ img {
       "attribution";
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 2fr 10px;
+	margin: auto;
 
 }
 
@@ -105,17 +103,49 @@ img {
 }
 
 
-/*
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
 
+	.container {
+		max-width: 800px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+	      "content image"
+	      "attribution attribution";
+	grid-template-rows: 1fr 10px;
+	margin-top: 15%;
+	}
 
+	.stats {
+		flex-direction: row;
+		justify-content: space-around;
+	}
 
-
-
-
-.container {
-    margin-right: auto;
-    margin-left: auto; 
-    margin-top: 80px;
-	grid-template-rows: 1fr 2fr 5%;
+	.content {
+		text-align: left;
+		padding: 5%;
+	}
 }
 
+@media only screen and (min-width: 1025px) {
+
+	.container {
+		max-width: 1600px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+	      "content image"
+	      "attribution attribution";
+	grid-template-rows: 1fr 10px;
+	margin-top: 5%;
+	}
+
+	.stats {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.content {
+		text-align: left;
+		padding: 5%;
+	}	
+
+}
